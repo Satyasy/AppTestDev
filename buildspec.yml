@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - echo "Installing Something...."
+  pre_build:
+    commands:
+      - echo "Pre-Build Something....""
+  build:
+    commands:
+      - echo "We Will Run some Test..."
+      - echo "The test is Runing...."
+      - grep -Fq "Congratulations" index.html
+  post_build:
+    commands:
+      - echo "We already finisih..."
