@@ -11,7 +11,7 @@ phases:
       - echo "Pre-Build Something....""
   build:
     commands:
-      - echo "We Will Run some Test..."
+      - echo "We Will Check Something....."
       - echo "The test is Runing...."
       - grep -Fq "Congratulations" index.html
   post_build:
